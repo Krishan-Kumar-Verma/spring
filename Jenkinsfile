@@ -12,7 +12,7 @@ pipeline
             steps 
             {
                 echo 'Build App'
-                git 'https://github.com/Krishan-Kumar-Verma/SpringBoot-Demo.git'
+                git 'https://github.com/Krishan-Kumar-Verma/spring.git'
                 echo 'This is stage for building the project'
                 bat 'mvn clean'
             }
@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                git 'https://github.com/Krishan-Kumar-Verma/SpringBoot-Demo.git'
+                git 'https://github.com/Krishan-Kumar-Verma/spring.git'
                 echo 'This is stage for Test Execution'
                 bat 'mvn clean'
             }
